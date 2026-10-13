@@ -424,7 +424,7 @@ export default function AramasFrota() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
                 viewport={{ once: true }}
-                className="text-center md:text-left pt-20 md:pt-0 will-change-[opacity]"
+                className="text-center md:text-left pt-32 md:pt-0 will-change-[opacity]"
               >
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-500 mb-2 md:mb-3">
                   01 — Frota Premium
@@ -536,7 +536,7 @@ export default function AramasFrota() {
       {/* SECTION 4: 2025 BUS HERO */}
       {/* Sticky on the transition itself: the tilt covers the blue details, then this hero stays put */}
       <SnapPoint />
-      <MotionStoryTransition zIndex={30} className="sticky top-0 h-screen w-full">
+      <MotionStoryTransition zIndex={30} className="sticky top-0 h-[100dvh] w-full">
         <Section
           aria-label="Marcopolo 2025"
           className="max-md:min-h-[100svh] bg-black bg-no-repeat max-md:bg-[length:100%_auto] max-md:bg-top md:bg-cover md:bg-bottom md:bg-right text-white max-md:bg-[url('/assets/images/onibus-marcopolo-2025-rosa-mobile-bg.jpg')] md:bg-[url('/assets/images/onibus-marcopolo-2025-rosa-bg.jpg')]"
@@ -551,8 +551,7 @@ export default function AramasFrota() {
             transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
             className="relative z-10 flex flex-col flex-1 justify-between md:justify-center max-w-3xl gap-4 md:gap-8 md:py-10"
           >
-            {/* pt-16 rather than the 2020 hero's pt-20: this bus sits higher in its image */}
-            <div className="text-center md:text-left pt-16 md:pt-0">
+            <div className="text-center md:text-left pt-32 md:pt-0">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-pink-500 mb-2 md:mb-3">
                 02 — Frota Premium
               </p>
@@ -640,7 +639,7 @@ export default function AramasFrota() {
       {/* SECTION 6: 2018/2019 LD BUS HERO */}
       {/* Sticky on the transition: it rotates over the pink details and then stays put */}
       <SnapPoint />
-      <MotionStoryTransition zIndex={50} className="sticky top-0 h-screen w-full">
+      <MotionStoryTransition zIndex={50} className="sticky top-0 h-[100dvh] w-full">
         <Section
           aria-label="Marcopolo Paradiso LD 2018 e 2019"
           className="max-md:min-h-[100svh] bg-black bg-no-repeat max-md:bg-[length:100%_auto] max-md:bg-center md:bg-cover md:bg-bottom md:bg-right text-white max-md:bg-[url('/assets/images/onibus-marcopolo-ld-2018-2019-mobile-bg.jpg')] md:bg-[url('/assets/images/onibus-marcopolo-ld-2018-2019-bg.jpg')]"
@@ -655,8 +654,7 @@ export default function AramasFrota() {
             transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
             className="relative z-10 flex flex-col flex-1 justify-between md:justify-center max-w-3xl gap-4 md:gap-8 md:py-10"
           >
-            {/* pt-16 rather than pt-20: the units badge makes this title block taller, so it would otherwise reach the bus roof */}
-            <div className="text-center md:text-left pt-16 md:pt-0">
+            <div className="text-center md:text-left pt-32 md:pt-0">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF453A] mb-2 md:mb-3">
                 03 — Frota Premium
               </p>
@@ -740,7 +738,7 @@ export default function AramasFrota() {
         theme="red"
         videoId="_htO2EOx2RU"
         cover="/assets/images/capa-video-ld.jpg"
-        className="max-md:-mt-2 md:snap-start md:snap-always relative z-[60] min-h-screen w-full overflow-hidden bg-[#0a0a0a] flex flex-col justify-center"
+        className="max-md:-mt-2 md:snap-start md:snap-always relative z-[60] min-h-[100dvh] w-full overflow-hidden bg-[#0a0a0a] flex flex-col justify-center"
       />
 
       {/* SECTION 8: FAQ */}

@@ -424,7 +424,7 @@ export default function AramasFrota() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
                 viewport={{ once: true }}
-                className="text-center md:text-left pt-32 md:pt-0 will-change-[opacity]"
+                className="text-center md:text-left pt-[25vh] md:pt-0 will-change-[opacity]"
               >
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-500 mb-2 md:mb-3">
                   01 — Frota Premium
@@ -551,7 +551,7 @@ export default function AramasFrota() {
             transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
             className="relative z-10 flex flex-col flex-1 justify-between md:justify-center max-w-3xl gap-4 md:gap-8 md:py-10"
           >
-            <div className="text-center md:text-left pt-32 md:pt-0">
+            <div className="text-center md:text-left pt-[25vh] md:pt-0">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-pink-500 mb-2 md:mb-3">
                 02 — Frota Premium
               </p>
@@ -654,7 +654,7 @@ export default function AramasFrota() {
             transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
             className="relative z-10 flex flex-col flex-1 justify-between md:justify-center max-w-3xl gap-4 md:gap-8 md:py-10"
           >
-            <div className="text-center md:text-left pt-32 md:pt-0">
+            <div className="text-center md:text-left pt-[25vh] md:pt-0">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF453A] mb-2 md:mb-3">
                 03 — Frota Premium
               </p>

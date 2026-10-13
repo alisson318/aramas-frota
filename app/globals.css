@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --font-sans: var(--font-plus-jakarta), "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Where CinematicScrollHero runs its pinned timeline (keep in sync with SCROLL_MOTION_QUERY); elsewhere it stacks statically. */
+@custom-variant scroll-motion (@media (prefers-reduced-motion: no-preference) and (scripting: enabled));
+
+@utility hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Start state for ScrollReveal and CinematicHeroReveal; GSAP's autoAlpha overrides it inline once the animation runs. */
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal],
+  [data-hero] {
+    visibility: hidden;
+  }
+}
+
+/* GlyphPortal styles its own parts in an unlayered <style>, which beats Tailwind's layered utilities,
+   so the fleet hero's overrides have to be plain unlayered rules too. */
+.fleet-portal {
+  font-family: var(--font-sans);
+}
+
+/* The caption row only holds the hint and the skip link; the hero is meant to be scrolled through */
+.fleet-portal [data-gp-caption] {
+  display: none;
+}
+
+/* Transparent even when the portal falls back to a static layout, where it would otherwise paint --gp-field over the photo */
+.fleet-portal [data-gp-content] {
+  padding: clamp(2rem, 6svh, 4rem) 4vw;
+  background: transparent;
+}
+/* CinematicScrollHero's card stays hidden until GSAP has moved it below the viewport, so it doesn't flash in its resting spot. */
+@media (prefers-reduced-motion: no-preference) and (scripting: enabled) {
+  [data-scroll-hero="card"] {
+    visibility: hidden;
+  }
+}

@@ -35,7 +35,7 @@ export default function MotionStoryTransition({ children, className, zIndex = 20
     <section
       ref={ref}
       style={{ zIndex }}
-      className={cn("w-full max-md:relative max-md:h-auto max-md:overflow-x-clip md:sticky md:top-0 md:h-screen md:overflow-visible", className)}
+      className={cn("w-full max-md:relative max-md:h-auto max-md:overflow-x-clip md:sticky md:top-0 md:h-[100dvh] md:overflow-visible", className)}
     >
       <motion.div
         style={{ rotate, transformOrigin: "bottom left" }}

@@ -60,7 +60,7 @@ export function ScrollChoreography({ className, images, mobileImages, children }
   const trY = useTransform(smoothProgress, [0, 0.3, 0.35, 0.65, 1], [yTop, yTop, yTop, "0vh", "0vh"]);
 
   const heroWidth = useTransform(smoothProgress, [0.65, 0.7, 0.9, 1], ["36vw", "36vw", "100vw", "100vw"]);
-  const heroHeight = useTransform(smoothProgress, [0.65, 0.7, 0.9, 1], ["24vh", "24vh", "100svh", "100svh"]);
+  const heroHeight = useTransform(smoothProgress, [0.65, 0.7, 0.9, 1], ["24vh", "24vh", "100dvh", "100dvh"]);
 
   const underImagesOpacity = useTransform(smoothProgress, [0.75, 0.85], [1, 0]);
   
@@ -78,10 +78,10 @@ export function ScrollChoreography({ className, images, mobileImages, children }
     // before the sticky interior that follows in normal flow.
     <div className={cn("relative h-[400vh] w-full bg-black", className)}>
       <div ref={trackRef} aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[300vh]" />
-      <div className="sticky top-0 h-[100svh] w-full overflow-hidden">
+      <div className="sticky top-0 h-[100dvh] min-h-[100dvh] w-full overflow-hidden">
         
-        {/* Section Title */}
-        <motion.div style={{ opacity: titleOpacity }} className="absolute top-20 left-0 w-full text-center z-50 px-4 max-md:mt-2">
+        {/* Section Title. On phones it sits higher (top-8) with mb-10 so it clears the 2x2 grid. */}
+        <motion.div style={{ opacity: titleOpacity }} className="absolute top-20 left-0 w-full text-center z-50 px-4 max-md:top-8 max-md:mb-10">
           <h2 className="text-white text-5xl max-md:text-4xl md:text-7xl font-black uppercase tracking-tighter">
             Conheça Nossos Modelos
           </h2>

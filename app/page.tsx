@@ -58,7 +58,7 @@ function Section({
     <section
       id={id}
       aria-label={ariaLabel}
-      className={`relative flex min-h-[100svh] w-full flex-col justify-between gap-6 overflow-hidden px-[4vw] pt-[clamp(2rem,8vw,4vw)] pb-[4vw] ${className ?? ''}`}
+      className={`relative flex min-h-[100dvh] w-full flex-col justify-between gap-6 overflow-hidden px-[4vw] pt-[clamp(2rem,8vw,4vw)] pb-[4vw] ${className ?? ''}`}
     >
       {children}
     </section>
@@ -227,7 +227,7 @@ function InteriorSection({
   return (
     <Section
       aria-label={label}
-      className={`relative h-auto min-h-[100svh]! lg:h-[100dvh] lg:min-h-0! max-md:pt-28 max-md:pb-12 bg-black text-white bg-[url('/assets/images/interior-premium-mobile-bg.jpg')] md:bg-[url('/assets/images/interior-premium-bg.jpg')] bg-cover bg-bottom bg-no-repeat ${className ?? ''}`}
+      className={`relative h-auto min-h-[100dvh]! lg:h-[100dvh] lg:min-h-0! max-md:pt-28 max-md:pb-12 bg-black text-white bg-[url('/assets/images/interior-premium-mobile-bg.jpg')] md:bg-[url('/assets/images/interior-premium-bg.jpg')] bg-cover bg-bottom bg-no-repeat ${className ?? ''}`}
     >
       <div aria-hidden className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
       <div aria-hidden className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
@@ -360,7 +360,7 @@ export default function AramasFrota() {
               </span>
             </motion.h2>
             <PremiumVideoPlayer
-              videoId="zBAxf2pG-E4"
+              videoId="tTzatIl3tVE"
               cover="/assets/images/capa-video-hero-v4.jpg"
               title="Conheça a frota Aramas Tur"
               orientation="horizontal"
@@ -404,13 +404,12 @@ export default function AramasFrota() {
             bottomRight: "/assets/images/frota-galeria-4-mobile.jpg"
           }}
         >
-          {/* max-md:min-h-[100svh] beats Section's min-h-screen (100vh), which on mobile is taller
-              than the visible area and jumps as the browser chrome shows and hides. Mobile uses its
-              own background; desktop keeps md:bg-none so the expanded gallery image shows through. */}
+          {/* max-md:min-h-[100dvh] tracks the visible viewport as the browser chrome shows and hides.
+              Mobile uses its own background; desktop keeps md:bg-none so the expanded gallery image shows through. */}
           <Section
             id="marcopolo-2020"
             aria-label="Marcopolo 2020"
-            className="relative max-md:min-h-[100svh] max-md:bg-black text-white max-md:bg-[url('/assets/images/onibus-marcopolo-2020-mobile-bg.jpg')] max-md:bg-cover max-md:bg-center max-md:bg-no-repeat md:bg-none"
+            className="relative max-md:min-h-[100dvh] max-md:bg-black text-white max-md:bg-[url('/assets/images/onibus-marcopolo-2020-mobile-bg.jpg')] max-md:bg-cover max-md:bg-center max-md:bg-no-repeat md:bg-none"
           >
             {/* Mobile: darken only the top behind the title; the text block below carries its own gradient */}
             <div className="absolute inset-x-0 top-0 h-[30%] bg-gradient-to-b from-black/80 to-transparent z-0 md:hidden"></div>
@@ -424,12 +423,12 @@ export default function AramasFrota() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
                 viewport={{ once: true }}
-                className="text-center md:text-left pt-[25vh] md:pt-0 will-change-[opacity]"
+                className="text-center md:text-left pt-12 md:pt-0 will-change-[opacity]"
               >
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-500 mb-2 md:mb-3">
                   01 — Frota Premium
                 </p>
-                <h2 className="text-[2.75rem] md:text-6xl lg:text-7xl font-bold leading-[0.9] uppercase tracking-tight">
+                <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.9] uppercase tracking-tight">
                   Marcopolo
                   <br />
                   Paradiso DD
@@ -438,7 +437,7 @@ export default function AramasFrota() {
                 </h2>
               </motion.div>
 
-              <div className="flex flex-col gap-3 md:gap-8 -mx-[4vw] -mb-[4vw] px-[4vw] pt-8 pb-12 bg-gradient-to-b from-transparent via-black/85 via-25% to-black md:mx-0 md:mb-0 md:px-0 md:pt-0 md:pb-0 md:bg-none">
+              <div className="flex flex-col gap-3 md:gap-8 -mx-[4vw] -mb-[4vw] px-[4vw] pt-4 pb-12 bg-gradient-to-b from-transparent via-black/85 via-25% to-black md:mx-0 md:mb-0 md:px-0 md:pt-0 md:pb-0 md:bg-none">
                 {/* On short phones (e.g. iPhone SE) the description is dropped so the specs and button still fit */}
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -539,7 +538,7 @@ export default function AramasFrota() {
       <MotionStoryTransition zIndex={30} className="sticky top-0 h-[100dvh] w-full">
         <Section
           aria-label="Marcopolo 2025"
-          className="max-md:min-h-[100svh] bg-black bg-no-repeat max-md:bg-[length:100%_auto] max-md:bg-top md:bg-cover md:bg-bottom md:bg-right text-white max-md:bg-[url('/assets/images/onibus-marcopolo-2025-rosa-mobile-bg.jpg')] md:bg-[url('/assets/images/onibus-marcopolo-2025-rosa-bg.jpg')]"
+          className="max-md:min-h-[100dvh] bg-black bg-no-repeat max-md:bg-[length:100%_auto] max-md:bg-top md:bg-cover md:bg-bottom md:bg-right text-white max-md:bg-[url('/assets/images/onibus-marcopolo-2025-rosa-mobile-bg.jpg')] md:bg-[url('/assets/images/onibus-marcopolo-2025-rosa-bg.jpg')]"
         >
           <div className="absolute inset-x-0 top-0 h-[30%] bg-gradient-to-b from-black/80 to-transparent z-0 md:hidden"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/70 to-transparent w-full md:w-2/3 z-0 hidden md:block"></div>
@@ -551,11 +550,11 @@ export default function AramasFrota() {
             transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
             className="relative z-10 flex flex-col flex-1 justify-between md:justify-center max-w-3xl gap-4 md:gap-8 md:py-10"
           >
-            <div className="text-center md:text-left pt-[25vh] md:pt-0">
+            <div className="text-center md:text-left pt-12 md:pt-0">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-pink-500 mb-2 md:mb-3">
                 02 — Frota Premium
               </p>
-              <h2 className="text-[2.75rem] md:text-6xl lg:text-7xl font-bold leading-[0.9] uppercase tracking-tight">
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.9] uppercase tracking-tight">
                 Marcopolo
                 <br />
                 Paradiso DD
@@ -564,7 +563,7 @@ export default function AramasFrota() {
               </h2>
             </div>
             
-            <div className="flex flex-col gap-3 md:gap-8 -mx-[4vw] max-md:mb-0 px-[4vw] max-md:pt-16 max-md:pb-12 max-md:bg-gradient-to-t max-md:from-black max-md:via-black/95 max-md:to-transparent md:mx-0 md:mb-0 md:px-0 md:pt-0 md:pb-0 md:bg-none">
+            <div className="flex flex-col gap-3 md:gap-8 -mx-[4vw] max-md:mb-0 px-[4vw] max-md:pt-4 max-md:pb-12 max-md:bg-gradient-to-t max-md:from-black max-md:via-black/95 max-md:to-transparent md:mx-0 md:mb-0 md:px-0 md:pt-0 md:pb-0 md:bg-none">
               <p className="max-w-[55ch] text-[15px] leading-snug md:text-lg md:leading-relaxed font-normal text-gray-300 max-md:[@media(max-height:640px)]:hidden">
                 O mais novo integrante da frota. Dois pisos de puro conforto, entretenimento a bordo e conectividade via satélite para transformar cada quilômetro em parte da experiência.
               </p>
@@ -642,7 +641,7 @@ export default function AramasFrota() {
       <MotionStoryTransition zIndex={50} className="sticky top-0 h-[100dvh] w-full">
         <Section
           aria-label="Marcopolo Paradiso LD 2018 e 2019"
-          className="max-md:min-h-[100svh] bg-black bg-no-repeat max-md:bg-[length:100%_auto] max-md:bg-center md:bg-cover md:bg-bottom md:bg-right text-white max-md:bg-[url('/assets/images/onibus-marcopolo-ld-2018-2019-mobile-bg.jpg')] md:bg-[url('/assets/images/onibus-marcopolo-ld-2018-2019-bg.jpg')]"
+          className="max-md:min-h-[100dvh] bg-black bg-no-repeat max-md:bg-[length:100%_auto] max-md:bg-center md:bg-cover md:bg-bottom md:bg-right text-white max-md:bg-[url('/assets/images/onibus-marcopolo-ld-2018-2019-mobile-bg.jpg')] md:bg-[url('/assets/images/onibus-marcopolo-ld-2018-2019-bg.jpg')]"
         >
           <div className="absolute inset-x-0 top-0 h-[30%] bg-gradient-to-b from-black/80 to-transparent z-0 md:hidden"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/70 to-transparent w-full md:w-2/3 z-0 hidden md:block"></div>
@@ -654,11 +653,11 @@ export default function AramasFrota() {
             transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
             className="relative z-10 flex flex-col flex-1 justify-between md:justify-center max-w-3xl gap-4 md:gap-8 md:py-10"
           >
-            <div className="text-center md:text-left pt-[25vh] md:pt-0">
+            <div className="text-center md:text-left pt-12 md:pt-0">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF453A] mb-2 md:mb-3">
                 03 — Frota Premium
               </p>
-              <h2 className="text-[2.75rem] md:text-6xl lg:text-7xl font-bold leading-[0.9] uppercase tracking-tight">
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.9] uppercase tracking-tight">
                 Marcopolo
                 <br />
                 Paradiso LD
@@ -670,7 +669,7 @@ export default function AramasFrota() {
               </span>
             </div>
             
-            <div className="flex flex-col gap-3 md:gap-8 -mx-[4vw] max-md:mb-0 px-[4vw] max-md:pt-16 max-md:pb-12 max-md:bg-gradient-to-t max-md:from-black max-md:via-black/95 max-md:to-transparent md:mx-0 md:mb-0 md:px-0 md:pt-0 md:pb-0 md:bg-none">
+            <div className="flex flex-col gap-3 md:gap-8 -mx-[4vw] max-md:mb-0 px-[4vw] max-md:pt-4 max-md:pb-12 max-md:bg-gradient-to-t max-md:from-black max-md:via-black/95 max-md:to-transparent md:mx-0 md:mb-0 md:px-0 md:pt-0 md:pb-0 md:bg-none">
               <p className="max-w-[55ch] text-[15px] leading-snug md:text-lg md:leading-relaxed font-normal text-gray-300 max-md:[@media(max-height:640px)]:hidden">
                 Padrão de excelência para grupos médios e grandes. Veículos equipados com o máximo de conforto, ideal para viagens seguras e conectadas.
               </p>

@@ -446,7 +446,7 @@ export default function AramasFrota() {
                   viewport={{ once: true }}
                   className="will-change-[opacity] max-md:[@media(max-height:640px)]:hidden"
                 >
-                  <p className="max-w-[55ch] text-[15px] leading-snug md:text-lg md:leading-relaxed font-normal text-gray-300">
+                  <p className="max-w-[55ch] text-[13px] leading-snug md:text-lg md:leading-relaxed font-normal text-gray-300">
                     A união perfeita entre luxo, tecnologia e segurança. O veículo ideal para excursões, viagens corporativas e turismo de lazer, projetado para oferecer o máximo de conforto em longas distâncias.
                   </p>
                 </motion.div>
@@ -462,36 +462,36 @@ export default function AramasFrota() {
                   <div>
                     <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1 text-blue-500">
                       <Users size={20} className="shrink-0 size-4 md:size-5" />
-                      <p className="text-[11px] md:text-sm font-bold uppercase tracking-wider text-white">Capacidade</p>
+                      <p className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-white">Capacidade</p>
                     </div>
-                    <p className="text-[13px] leading-snug md:text-sm md:leading-relaxed opacity-75">
+                    <p className="text-[11px] leading-snug md:text-sm md:leading-relaxed opacity-75">
                       50 passageiros acomodados com total conforto.
                     </p>
                   </div>
                   <div>
                     <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1 text-blue-500">
                       <Bed size={20} className="shrink-0 size-4 md:size-5" />
-                      <p className="text-[11px] md:text-sm font-bold uppercase tracking-wider text-white">Leito Cama</p>
+                      <p className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-white">Leito Cama</p>
                     </div>
-                    <p className="text-[13px] leading-snug md:text-sm md:leading-relaxed opacity-75">
+                    <p className="text-[11px] leading-snug md:text-sm md:leading-relaxed opacity-75">
                       06 poltronas com reclinação máxima no piso inferior.
                     </p>
                   </div>
                   <div>
                     <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1 text-blue-500">
                       <Earth size={20} className="shrink-0 size-4 md:size-5" />
-                      <p className="text-[11px] md:text-sm font-bold uppercase tracking-wider text-white">Internet Starlink</p>
+                      <p className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-white">Internet Starlink</p>
                     </div>
-                    <p className="text-[13px] leading-snug md:text-sm md:leading-relaxed opacity-75">
+                    <p className="text-[11px] leading-snug md:text-sm md:leading-relaxed opacity-75">
                       Wi-Fi via satélite de alta velocidade contínua.
                     </p>
                   </div>
                   <div>
                     <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1 text-blue-500">
                       <Briefcase size={20} className="shrink-0 size-4 md:size-5" />
-                      <p className="text-[11px] md:text-sm font-bold uppercase tracking-wider text-white">Amplo Bagageiro</p>
+                      <p className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-white">Amplo Bagageiro</p>
                     </div>
-                    <p className="text-[13px] leading-snug md:text-sm md:leading-relaxed opacity-75">
+                    <p className="text-[11px] leading-snug md:text-sm md:leading-relaxed opacity-75">
                       Espaço ideal para bagagens de grandes grupos.
                     </p>
                   </div>
@@ -564,7 +564,7 @@ export default function AramasFrota() {
             </div>
             
             <div className="flex flex-col gap-3 md:gap-8 -mx-[4vw] max-md:mb-0 px-[4vw] max-md:pt-4 max-md:pb-12 max-md:bg-gradient-to-t max-md:from-black max-md:via-black/95 max-md:to-transparent md:mx-0 md:mb-0 md:px-0 md:pt-0 md:pb-0 md:bg-none">
-              <p className="max-w-[55ch] text-[15px] leading-snug md:text-lg md:leading-relaxed font-normal text-gray-300 max-md:[@media(max-height:640px)]:hidden">
+              <p className="max-w-[55ch] text-[13px] leading-snug md:text-lg md:leading-relaxed font-normal text-gray-300 max-md:[@media(max-height:640px)]:hidden">
                 O mais novo integrante da frota. Dois pisos de puro conforto, entretenimento a bordo e conectividade via satélite para transformar cada quilômetro em parte da experiência.
               </p>
               
@@ -572,36 +572,36 @@ export default function AramasFrota() {
                 <div>
                   <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1 text-pink-500">
                     <Users size={20} className="shrink-0 size-4 md:size-5" />
-                    <p className="text-[11px] md:text-sm font-bold uppercase tracking-wider text-white">Capacidade</p>
+                    <p className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-white">Capacidade</p>
                   </div>
-                  <p className="text-[13px] leading-snug md:text-sm md:leading-relaxed opacity-75">
+                  <p className="text-[11px] leading-snug md:text-sm md:leading-relaxed opacity-75">
                     56 passageiros no total, distribuídos em dois pisos.
                   </p>
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1 text-pink-500">
                     <Layers size={20} className="shrink-0 size-4 md:size-5" />
-                    <p className="text-[11px] md:text-sm font-bold uppercase tracking-wider text-white">Distribuição</p>
+                    <p className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-white">Distribuição</p>
                   </div>
-                  <p className="text-[13px] leading-snug md:text-sm md:leading-relaxed opacity-75">
+                  <p className="text-[11px] leading-snug md:text-sm md:leading-relaxed opacity-75">
                     48 Semi Leito no piso superior e 08 Leito Cama no piso inferior.
                   </p>
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1 text-pink-500">
                     <MonitorPlay size={20} className="shrink-0 size-4 md:size-5" />
-                    <p className="text-[11px] md:text-sm font-bold uppercase tracking-wider text-white">Entretenimento</p>
+                    <p className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-white">Entretenimento</p>
                   </div>
-                  <p className="text-[13px] leading-snug md:text-sm md:leading-relaxed opacity-75">
+                  <p className="text-[11px] leading-snug md:text-sm md:leading-relaxed opacity-75">
                     CD, DVD e 6 televisores espalhados pelo veículo.
                   </p>
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1 text-pink-500">
                     <Zap size={20} className="shrink-0 size-4 md:size-5" />
-                    <p className="text-[11px] md:text-sm font-bold uppercase tracking-wider text-white">Conectividade & Energia</p>
+                    <p className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-white">Conectividade & Energia</p>
                   </div>
-                  <p className="text-[13px] leading-snug md:text-sm md:leading-relaxed opacity-75">
+                  <p className="text-[11px] leading-snug md:text-sm md:leading-relaxed opacity-75">
                     Internet Starlink e tomadas individuais para seus dispositivos.
                   </p>
                 </div>
@@ -670,7 +670,7 @@ export default function AramasFrota() {
             </div>
             
             <div className="flex flex-col gap-3 md:gap-8 -mx-[4vw] max-md:mb-0 px-[4vw] max-md:pt-4 max-md:pb-12 max-md:bg-gradient-to-t max-md:from-black max-md:via-black/95 max-md:to-transparent md:mx-0 md:mb-0 md:px-0 md:pt-0 md:pb-0 md:bg-none">
-              <p className="max-w-[55ch] text-[15px] leading-snug md:text-lg md:leading-relaxed font-normal text-gray-300 max-md:[@media(max-height:640px)]:hidden">
+              <p className="max-w-[55ch] text-[13px] leading-snug md:text-lg md:leading-relaxed font-normal text-gray-300 max-md:[@media(max-height:640px)]:hidden">
                 Padrão de excelência para grupos médios e grandes. Veículos equipados com o máximo de conforto, ideal para viagens seguras e conectadas.
               </p>
               
@@ -678,36 +678,36 @@ export default function AramasFrota() {
                 <div>
                   <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1 text-[#FF453A]">
                     <Users size={20} className="shrink-0 size-4 md:size-5" />
-                    <p className="text-[11px] md:text-sm font-bold uppercase tracking-wider text-white">Capacidade</p>
+                    <p className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-white">Capacidade</p>
                   </div>
-                  <p className="text-[13px] leading-snug md:text-sm md:leading-relaxed opacity-75">
+                  <p className="text-[11px] leading-snug md:text-sm md:leading-relaxed opacity-75">
                     44 passageiros acomodados com total conforto.
                   </p>
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1 text-[#FF453A]">
                     <Armchair size={20} className="shrink-0 size-4 md:size-5" />
-                    <p className="text-[11px] md:text-sm font-bold uppercase tracking-wider text-white">Conforto</p>
+                    <p className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-white">Conforto</p>
                   </div>
-                  <p className="text-[13px] leading-snug md:text-sm md:leading-relaxed opacity-75">
+                  <p className="text-[11px] leading-snug md:text-sm md:leading-relaxed opacity-75">
                     Poltronas Semi Leito padrão em todo o veículo.
                   </p>
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1 text-[#FF453A]">
                     <MonitorPlay size={20} className="shrink-0 size-4 md:size-5" />
-                    <p className="text-[11px] md:text-sm font-bold uppercase tracking-wider text-white">Entretenimento</p>
+                    <p className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-white">Entretenimento</p>
                   </div>
-                  <p className="text-[13px] leading-snug md:text-sm md:leading-relaxed opacity-75">
+                  <p className="text-[11px] leading-snug md:text-sm md:leading-relaxed opacity-75">
                     4 televisores, CD e DVD a bordo.
                   </p>
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1 text-[#FF453A]">
                     <Zap size={20} className="shrink-0 size-4 md:size-5" />
-                    <p className="text-[11px] md:text-sm font-bold uppercase tracking-wider text-white">Conectividade & Energia</p>
+                    <p className="text-[10px] md:text-sm font-bold uppercase tracking-wider text-white">Conectividade & Energia</p>
                   </div>
-                  <p className="text-[13px] leading-snug md:text-sm md:leading-relaxed opacity-75">
+                  <p className="text-[11px] leading-snug md:text-sm md:leading-relaxed opacity-75">
                     Internet Starlink e tomadas individuais para seus dispositivos.
                   </p>
                 </div>

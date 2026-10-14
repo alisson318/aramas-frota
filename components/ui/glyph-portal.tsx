@@ -239,7 +239,7 @@ export default function GlyphPortal({
     const layout = () => {
       if (!section.clientWidth) return;
       W = pin.clientWidth;
-      // A 100svh probe keeps browser chrome from continually changing the scroll distance.
+      // A 100dvh probe follows the visible viewport as mobile browser chrome shows and hides.
       const smallViewport = section.querySelector<HTMLElement>("[data-gp-viewport]")!.offsetHeight;
       const viewportHeight = Math.max(1, Math.min(root?.clientHeight ?? smallViewport, smallViewport));
       H = motion.matches ? Math.min(viewportHeight * 0.75, 480) : viewportHeight;
@@ -344,8 +344,8 @@ export default function GlyphPortal({
       style={{ "--gp-length": length, "--gp-characters": Array.from(text).length, ...style } as CSSProperties}>
       <style>{`
         ${q}{--gp-paper:#fff;--gp-ink:#0c1212;--gp-field:#0b3b2a;--gp-foreground:#fbfbfa;position:relative;isolation:isolate;background:var(--gp-paper);color:var(--gp-ink);font-family:Arial,sans-serif;}
-        ${q}>[data-gp-viewport]{position:absolute;inset:0 auto auto 0;height:100vh;height:100svh;width:0;pointer-events:none;visibility:hidden;}
-        ${q} [data-gp-pin]{position:relative;height:var(--gp-height,100svh);overflow:clip;isolation:isolate;container-type:size;}
+        ${q}>[data-gp-viewport]{position:absolute;inset:0 auto auto 0;height:100dvh;width:0;pointer-events:none;visibility:hidden;}
+        ${q} [data-gp-pin]{position:relative;height:var(--gp-height,100dvh);overflow:clip;isolation:isolate;container-type:size;}
         ${q} [data-gp-field]{position:absolute;inset:0;background:var(--gp-field);opacity:0;pointer-events:none;}
         ${q}[data-gp-ready] [data-gp-field]{opacity:1;}
         ${q} [data-gp-art]{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;}
@@ -371,7 +371,7 @@ export default function GlyphPortal({
         ${q} [data-gp-enter]:focus-visible{outline:2px solid currentColor;outline-offset:5px;}
         ${q} [data-gp-caption]:focus-within{opacity:1;pointer-events:auto;}
         ${q} [data-gp-enter]:focus-visible{background:var(--gp-paper);color:var(--gp-ink);padding:0 12px;margin:0 -12px;}
-        ${q} [data-gp-content]{box-sizing:border-box;position:relative;min-height:var(--gp-height,100svh);padding:clamp(32px,7%,100px);display:grid;align-content:center;color:var(--gp-foreground);background:var(--gp-field);overflow-wrap:anywhere;}
+        ${q} [data-gp-content]{box-sizing:border-box;position:relative;min-height:var(--gp-height,100dvh);padding:clamp(32px,7%,100px);display:grid;align-content:center;color:var(--gp-foreground);background:var(--gp-field);overflow-wrap:anywhere;}
         ${q}[data-gp-motion=on] [data-gp-pin]{position:sticky;top:0;}
         ${q}[data-gp-motion=off] [data-gp-hint]{display:none;}
         ${q}[data-gp-motion=on] [data-gp-content]{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0;background:transparent;pointer-events:none;z-index:50;}
@@ -416,12 +416,12 @@ export default function GlyphPortal({
         </div>
       </div>
       <div data-gp-content id={`${uid}-content`} tabIndex={-1}>
-        <div style={{ position: "sticky", top: 0, height: "100svh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+        <div style={{ position: "sticky", top: 0, height: "100dvh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
           {children ?? <div><h2 data-gp-default-title>A letter becomes a place.</h2><p data-gp-default-copy>The shape opens onto whatever comes next.</p></div>}
         </div>
       </div>
       {/* Spacer to maintain GSAP scroll timeline height */}
-      <div data-gp-spacer aria-hidden="true" style={{ height: "calc(var(--gp-length) * var(--gp-height, 100vh))", pointerEvents: "none" }} />
+      <div data-gp-spacer aria-hidden="true" style={{ height: "calc(var(--gp-length) * var(--gp-height, 100dvh))", pointerEvents: "none" }} />
     </section>
   );
 }

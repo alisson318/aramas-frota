@@ -527,7 +527,7 @@ export default function AramasFrota() {
         label="Interior do Ônibus Paradiso DD 2020"
         features={INTERIOR_2020}
         theme="blue"
-        videoId="elkyq5GXDns"
+        videoId="ZUiWQJqduzE"
         cover="/assets/images/capa-video-azul.jpg"
         className="max-md:-mt-2 max-md:relative max-md:h-auto max-md:overflow-visible md:sticky md:top-0 z-20 md:min-h-screen w-full md:overflow-hidden bg-[#0a0a0a] flex flex-col justify-center"
       />
@@ -630,7 +630,7 @@ export default function AramasFrota() {
         label="Interior do Ônibus Paradiso DD 2025"
         features={INTERIOR_2025}
         theme="pink"
-        videoId="V0YpE7nSHRk"
+        videoId="wDFSGjcepRA"
         cover="/assets/images/capa-video-rosa.jpg"
         className="max-md:-mt-2 max-md:relative max-md:h-auto max-md:overflow-visible md:sticky! md:top-0 z-40 md:min-h-screen w-full md:overflow-hidden bg-[#0a0a0a] flex flex-col justify-center"
       />
@@ -735,7 +735,7 @@ export default function AramasFrota() {
         label="Interior do Ônibus Paradiso LD 2018 e 2019"
         features={INTERIOR_LD}
         theme="red"
-        videoId="_htO2EOx2RU"
+        videoId="Di3-qE57vMk"
         cover="/assets/images/capa-video-ld.jpg"
         className="max-md:-mt-2 md:snap-start md:snap-always relative z-[60] min-h-[100vh] w-full overflow-hidden bg-[#0a0a0a] flex flex-col justify-center"
       />

@@ -58,7 +58,7 @@ function Section({
     <section
       id={id}
       aria-label={ariaLabel}
-      className={`relative flex min-h-[100dvh] w-full flex-col justify-between gap-6 overflow-hidden px-[4vw] pt-[clamp(2rem,8vw,4vw)] pb-[4vw] ${className ?? ''}`}
+      className={`relative flex min-h-[100vh] w-full flex-col justify-between gap-6 overflow-hidden px-[4vw] pt-[clamp(2rem,8vw,4vw)] pb-[4vw] ${className ?? ''}`}
     >
       {children}
     </section>
@@ -227,7 +227,7 @@ function InteriorSection({
   return (
     <Section
       aria-label={label}
-      className={`relative h-auto min-h-[100dvh]! lg:h-[100dvh] lg:min-h-0! max-md:pt-28 max-md:pb-12 bg-black text-white bg-[url('/assets/images/interior-premium-mobile-bg.jpg')] md:bg-[url('/assets/images/interior-premium-bg.jpg')] bg-cover bg-bottom bg-no-repeat ${className ?? ''}`}
+      className={`relative h-auto min-h-[100vh]! lg:h-[100vh] lg:min-h-0! max-md:pt-28 max-md:pb-12 bg-black text-white bg-[url('/assets/images/interior-premium-mobile-bg.jpg')] md:bg-[url('/assets/images/interior-premium-bg.jpg')] bg-cover bg-bottom bg-no-repeat ${className ?? ''}`}
     >
       <div aria-hidden className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
       <div aria-hidden className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
@@ -404,12 +404,12 @@ export default function AramasFrota() {
             bottomRight: "/assets/images/frota-galeria-4-mobile.jpg"
           }}
         >
-          {/* max-md:min-h-[100dvh] tracks the visible viewport as the browser chrome shows and hides.
+          {/* max-md:min-h-[100vh] stays stable while the mobile address bar shows and hides.
               Mobile uses its own background; desktop keeps md:bg-none so the expanded gallery image shows through. */}
           <Section
             id="marcopolo-2020"
             aria-label="Marcopolo 2020"
-            className="relative max-md:min-h-[100dvh] max-md:bg-black text-white max-md:bg-[url('/assets/images/onibus-marcopolo-2020-mobile-bg.jpg')] max-md:bg-cover max-md:bg-center max-md:bg-no-repeat md:bg-none"
+            className="relative max-md:min-h-[100vh] max-md:bg-black text-white max-md:bg-[url('/assets/images/onibus-marcopolo-2020-mobile-bg.jpg')] max-md:bg-cover max-md:bg-center max-md:bg-no-repeat md:bg-none"
           >
             {/* Mobile: darken only the top behind the title; the text block below carries its own gradient */}
             <div className="absolute inset-x-0 top-0 h-[30%] bg-gradient-to-b from-black/80 to-transparent z-0 md:hidden"></div>
@@ -535,10 +535,10 @@ export default function AramasFrota() {
       {/* SECTION 4: 2025 BUS HERO */}
       {/* Sticky on the transition itself: the tilt covers the blue details, then this hero stays put */}
       <SnapPoint />
-      <MotionStoryTransition zIndex={30} className="sticky top-0 h-[100dvh] w-full">
+      <MotionStoryTransition zIndex={30} className="sticky top-0 h-[100vh] w-full">
         <Section
           aria-label="Marcopolo 2025"
-          className="max-md:min-h-[100dvh] bg-black bg-no-repeat max-md:bg-[length:100%_auto] max-md:bg-top md:bg-cover md:bg-bottom md:bg-right text-white max-md:bg-[url('/assets/images/onibus-marcopolo-2025-rosa-mobile-bg.jpg')] md:bg-[url('/assets/images/onibus-marcopolo-2025-rosa-bg.jpg')]"
+          className="max-md:min-h-[100vh] bg-black bg-no-repeat max-md:bg-[length:100%_auto] max-md:bg-top md:bg-cover md:bg-bottom md:bg-right text-white max-md:bg-[url('/assets/images/onibus-marcopolo-2025-rosa-mobile-bg.jpg')] md:bg-[url('/assets/images/onibus-marcopolo-2025-rosa-bg.jpg')]"
         >
           <div className="absolute inset-x-0 top-0 h-[30%] bg-gradient-to-b from-black/80 to-transparent z-0 md:hidden"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/70 to-transparent w-full md:w-2/3 z-0 hidden md:block"></div>
@@ -638,10 +638,10 @@ export default function AramasFrota() {
       {/* SECTION 6: 2018/2019 LD BUS HERO */}
       {/* Sticky on the transition: it rotates over the pink details and then stays put */}
       <SnapPoint />
-      <MotionStoryTransition zIndex={50} className="sticky top-0 h-[100dvh] w-full">
+      <MotionStoryTransition zIndex={50} className="sticky top-0 h-[100vh] w-full">
         <Section
           aria-label="Marcopolo Paradiso LD 2018 e 2019"
-          className="max-md:min-h-[100dvh] bg-black bg-no-repeat max-md:bg-[length:100%_auto] max-md:bg-center md:bg-cover md:bg-bottom md:bg-right text-white max-md:bg-[url('/assets/images/onibus-marcopolo-ld-2018-2019-mobile-bg.jpg')] md:bg-[url('/assets/images/onibus-marcopolo-ld-2018-2019-bg.jpg')]"
+          className="max-md:min-h-[100vh] bg-black bg-no-repeat max-md:bg-[length:100%_auto] max-md:bg-center md:bg-cover md:bg-bottom md:bg-right text-white max-md:bg-[url('/assets/images/onibus-marcopolo-ld-2018-2019-mobile-bg.jpg')] md:bg-[url('/assets/images/onibus-marcopolo-ld-2018-2019-bg.jpg')]"
         >
           <div className="absolute inset-x-0 top-0 h-[30%] bg-gradient-to-b from-black/80 to-transparent z-0 md:hidden"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/70 to-transparent w-full md:w-2/3 z-0 hidden md:block"></div>
@@ -737,7 +737,7 @@ export default function AramasFrota() {
         theme="red"
         videoId="_htO2EOx2RU"
         cover="/assets/images/capa-video-ld.jpg"
-        className="max-md:-mt-2 md:snap-start md:snap-always relative z-[60] min-h-[100dvh] w-full overflow-hidden bg-[#0a0a0a] flex flex-col justify-center"
+        className="max-md:-mt-2 md:snap-start md:snap-always relative z-[60] min-h-[100vh] w-full overflow-hidden bg-[#0a0a0a] flex flex-col justify-center"
       />
 
       {/* SECTION 8: FAQ */}

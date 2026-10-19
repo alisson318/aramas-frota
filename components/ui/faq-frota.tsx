@@ -92,10 +92,10 @@ export default function FaqFrota() {
                 <Mail className="mr-1 inline size-3" />
                 Ou envie um e-mail para{" "}
                 <a
-                  href="mailto:contato@aramastur.com.br"
+                  href="mailto:aramas_tur@hotmail.com"
                   className="font-medium text-white underline-offset-4 hover:underline"
                 >
-                  contato@aramastur.com.br
+                  aramas_tur@hotmail.com
                 </a>
               </p>
             </div>
